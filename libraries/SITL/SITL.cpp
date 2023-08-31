@@ -497,17 +497,27 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     AP_GROUPINFO("GPS_HZ",         7, SIM,  gps_hertz[0],  5),
     // @Param: GPS_DRIFTALT
     // @DisplayName: GPS 1 Altitude Drift
-    // @Description: GPS 1 Drift in Altitude
+    // @Description: GPS 1 altitude drift error
     // @Units: m
     // @User: Advanced
     AP_GROUPINFO("GPS_DRIFTALT",   8, SIM,  gps_drift_alt[0], 0),
     // @Param: GPS_POS
     // @DisplayName: GPS 1 Position
-    // @Description: GPS 1 Position Offset
+    // @Description: GPS 1 antenna phase center position relative to the body frame origin
     // @Units: m
     // @Vector3Parameter: 1
     AP_GROUPINFO("GPS_POS",        9, SIM,  gps_pos_offset[0], 0),
+    // @Param: GPS_NOISE
+    // @DisplayName: GPS 1 Noise
+    // @Description: Amplitude of the GPS1 altitude error
+    // @Units: m
+    // @User: Advanced
     AP_GROUPINFO("GPS_NOISE",     10, SIM,  gps_noise[0], 0),
+    // @Param: GPS_LOCKTIME
+    // @DisplayName: GPS 1 Lock Time
+    // @Description: Delay in seconds before GPS1 acquires lock
+    // @Units: s
+    // @User: Advanced
     AP_GROUPINFO("GPS_LOCKTIME",  11, SIM,  gps_lock_time[0], 0),
     AP_GROUPINFO("GPS_ALT_OFS",   12, SIM,  gps_alt_offset[0], 0),
     AP_GROUPINFO("GPS_HDG",       13, SIM,  gps_hdg_enabled[0], SIM::GPS_HEADING_NONE),
@@ -553,17 +563,27 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     AP_GROUPINFO("GPS2_HZ",       36, SIM,  gps_hertz[1],  5),
     // @Param: GPS2_DRIFTALT
     // @DisplayName: GPS 2 Altitude Drift
-    // @Description: GPS 2 Drift in Altitude
+    // @Description: GPS 2 altitude drift error
     // @Units: m
     // @User: Advanced
     AP_GROUPINFO("GPS2_DRFTALT",  37, SIM,  gps_drift_alt[1], 0),
     // @Param: GPS2_POS
     // @DisplayName: GPS 2 Position
-    // @Description: GPS 2 Position Offset
+    // @Description: GPS 2 antenna phase center position relative to the body frame origin
     // @Units: m
     // @Vector3Parameter: 1
     AP_GROUPINFO("GPS2_POS",      38, SIM,  gps_pos_offset[1], 0),
+    // @Param: GPS2_NOISE
+    // @DisplayName: GPS 2 Noise
+    // @Description: Amplitude of the GPS2 altitude error
+    // @Units: m
+    // @User: Advanced
     AP_GROUPINFO("GPS2_NOISE",    39, SIM,  gps_noise[1], 0),
+    // @Param: GPS2_LOCKTIME
+    // @DisplayName: GPS 2 Lock Time
+    // @Description: Delay in seconds before GPS2 acquires lock
+    // @Units: s
+    // @User: Advanced
     AP_GROUPINFO("GPS2_LCKTIME",  40, SIM,  gps_lock_time[1], 0),
     AP_GROUPINFO("GPS2_ALT_OFS",  41, SIM,  gps_alt_offset[1], 0),
     AP_GROUPINFO("GPS2_HDG",      42, SIM,  gps_hdg_enabled[1], SIM::GPS_HEADING_NONE),
