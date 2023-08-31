@@ -536,6 +536,11 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Vector3Parameter: 1
     // @User: Advanced
     AP_GROUPINFO("GPS_ACC",       14, SIM,  gps_accuracy[0], 0.3),
+    // @Param: GPS_VERR
+    // @DisplayName: GPS 1 Velocity Error
+    // @Description: GPS 1 Velocity Error Offsets in NED
+    // @Vector3Parameter: 1
+    // @User: Advanced
     AP_GROUPINFO("GPS_VERR",      15, SIM,  gps_vel_err[0], 0),
     // @Param: GPS2_DISABLE
     // @DisplayName: GPS 2 disable
@@ -616,12 +621,29 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Vector3Parameter: 1
     // @User: Advanced
     AP_GROUPINFO("GPS2_ACC",      43, SIM,  gps_accuracy[1], 0.3),
+    // @Param: GPS_VERR
+    // @DisplayName: GPS 1 Velocity Error
+    // @Description: GPS 1 Velocity Error Offsets in NED
+    // @Vector3Parameter: 1
+    // @User: Advanced
     AP_GROUPINFO("GPS2_VERR",     44, SIM,  gps_vel_err[1], 0),
 
+    // @Param: INIT_LAT_OFS
+    // @DisplayName: Initial Latitude Offset
+    // @Description GPS initial lat offset from origin
     AP_GROUPINFO("INIT_LAT_OFS",  45, SIM,  gps_init_lat_ofs, 0),
+    // @Param: INIT_LON_OFS
+    // @DisplayName: Initial Longitude Offset
+    // @Description GPS initial lon offset from origin
     AP_GROUPINFO("INIT_LON_OFS",  46, SIM,  gps_init_lon_ofs, 0),
+    // @Param: INIT_ALT_OFS
+    // @DisplayName: Initial Altitude Offset
+    // @Description GPS initial alt offset from origin
     AP_GROUPINFO("INIT_ALT_OFS",  47, SIM,  gps_init_alt_ofs, 0),
 
+    // @Param: GPS_LOG_NUM
+    // @DisplayName: GPS Log Number
+    // @Description: Log number for GPS:update_file()
     AP_GROUPINFO("GPS_LOG_NUM",   48, SIM,  gps_log_num, 0),
 
     AP_GROUPEND
