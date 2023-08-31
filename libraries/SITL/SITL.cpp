@@ -485,8 +485,9 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Description: Number of satellites GPS 1 has in view
     AP_GROUPINFO("GPS_NUMSATS",    5, SIM,  gps_numsats[0],   10),
     // @Param: GPS_GLITCH
-    // @DisplayName: GPS 1 Glitch Offsets
-    // @Description: Lat, Lon, Alt offsets for GPS 1 glitches
+    // @DisplayName: GPS 1 Glitch
+    // @Description: Glitch offsets of simulated GPS 2 sensor
+    // @Vector3Parameter: 1
     // @User: Advanced
     AP_GROUPINFO("GPS_GLITCH",     6, SIM,  gps_glitch[0],  0),
     // @Param: GPS_HZ
@@ -500,6 +501,11 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Units: m
     // @User: Advanced
     AP_GROUPINFO("GPS_DRIFTALT",   8, SIM,  gps_drift_alt[0], 0),
+    // @Param: GPS_POS
+    // @DisplayName: GPS 1 Position
+    // @Description: GPS 1 Position Offset
+    // @Units: m
+    // @Vector3Parameter: 1
     AP_GROUPINFO("GPS_POS",        9, SIM,  gps_pos_offset[0], 0),
     AP_GROUPINFO("GPS_NOISE",     10, SIM,  gps_noise[0], 0),
     AP_GROUPINFO("GPS_LOCKTIME",  11, SIM,  gps_lock_time[0], 0),
@@ -535,8 +541,9 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Description: Number of satellites GPS 2 has in view
     AP_GROUPINFO("GPS2_NUMSATS",  34, SIM,  gps_numsats[1],   10),
     // @Param: GPS2_GLITCH
-    // @DisplayName: GPS 2 Glitch Offsets
-    // @Description: Lat, Lon, Alt offsets for GPS 2 glitches
+    // @DisplayName: GPS 2 Glitch
+    // @Description: Glitch offsets of simulated GPS 2 sensor
+    // @Vector3Parameter: 1
     // @User: Advanced
     AP_GROUPINFO("GPS2_GLTCH",    35, SIM,  gps_glitch[1],  0),
     // @Param: GPS2_HZ
@@ -550,6 +557,11 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Units: m
     // @User: Advanced
     AP_GROUPINFO("GPS2_DRFTALT",  37, SIM,  gps_drift_alt[1], 0),
+    // @Param: GPS2_POS
+    // @DisplayName: GPS 2 Position
+    // @Description: GPS 2 Position Offset
+    // @Units: m
+    // @Vector3Parameter: 1
     AP_GROUPINFO("GPS2_POS",      38, SIM,  gps_pos_offset[1], 0),
     AP_GROUPINFO("GPS2_NOISE",    39, SIM,  gps_noise[1], 0),
     AP_GROUPINFO("GPS2_LCKTIME",  40, SIM,  gps_lock_time[1], 0),
