@@ -463,9 +463,10 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @User: Advanced
     AP_GROUPINFO("GPS_DISABLE",    1, SIM,  gps_disable[0], 0),
     // @Param: GPS_LAG_MS
-    // @DisplayName: GPS1 Lag
-    // @Description: Sets the gps lag in ms
-    // @Units: milliseconds 
+    // @DisplayName: GPS 1 Lag
+    // @Description: GPS 1 lag in ms
+    // @Units: ms
+    // @User: Advanced
     AP_GROUPINFO("GPS_LAG_MS",     2, SIM,  gps_delay_ms[0], 100),
     // @Param: GPS_TYPE
     // @DisplayName: GPS 1 type
@@ -476,6 +477,7 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Param: GPS_BYTELOSS
     // @DisplayName: GPS Byteloss
     // @Description: Percent of bytes lost from GPS 1
+    // @Units: %
     // @User: Advanced
     AP_GROUPINFO("GPS_BYTELOSS",   4, SIM,  gps_byteloss[0],  0),
     // @Param: GPS_NUMSATS
@@ -498,6 +500,11 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Values: 0:Enable, 1:GPS Disabled
     // @User: Advanced
     AP_GROUPINFO("GPS2_DISABLE",  30, SIM,  gps_disable[1], 1),
+    // @Param: GPS2_LAG_MS
+    // @DisplayName: GPS 2 Lag
+    // @Description: GPS 2 lag in ms
+    // @Units: ms
+    // @User: Advanced
     AP_GROUPINFO("GPS2_LAG_MS",   31, SIM,  gps_delay_ms[1], 100),
     // @Param: GPS2_TYPE
     // @CopyFieldsFrom: SIM_GPS_TYPE
@@ -507,6 +514,7 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Param: GPS2_BYTELOS
     // @DisplayName: GPS 2 Byteloss
     // @Description: Percent of bytes lost from GPS 2
+    // @Units: %
     // @User: Advanced
     AP_GROUPINFO("GPS2_BYTELOS",  33, SIM,  gps_byteloss[1],  0),
     // @Param: GPS2_NUMSATS
