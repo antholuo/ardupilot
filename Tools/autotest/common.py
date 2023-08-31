@@ -2236,7 +2236,6 @@ class AutoTest(ABC):
             "SIM_GPS_GLITCH_Z",
             "SIM_GPS_HDG",
             "SIM_GPS_HZ",
-            "SIM_GPS_LAG_MS",
             "SIM_GPS_LOCKTIME",
             "SIM_GPS_LOG_NUM",
             "SIM_GPS_NOISE",

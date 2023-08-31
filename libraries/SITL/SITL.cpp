@@ -462,6 +462,10 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Values: 0:Enable, 1:GPS Disabled
     // @User: Advanced
     AP_GROUPINFO("GPS_DISABLE",    1, SIM,  gps_disable[0], 0),
+    // @Param: GPS_LAG_MS
+    // @DisplayName: GPS1 Lag
+    // @Description: Sets the gps lag in ms
+    // @Units: milliseconds 
     AP_GROUPINFO("GPS_LAG_MS",     2, SIM,  gps_delay_ms[0], 100),
     // @Param: GPS_TYPE
     // @DisplayName: GPS 1 type
