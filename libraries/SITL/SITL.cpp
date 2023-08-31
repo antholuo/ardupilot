@@ -519,7 +519,16 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Units: s
     // @User: Advanced
     AP_GROUPINFO("GPS_LOCKTIME",  11, SIM,  gps_lock_time[0], 0),
+    // @Param: GPS_ALT_OFS
+    // @DisplayName: GPS 1 Altitude Offset
+    // @Description: GPS 1 Altitude Error
+    // @Units: m
     AP_GROUPINFO("GPS_ALT_OFS",   12, SIM,  gps_alt_offset[0], 0),
+    // @Param: GPS_HDG
+    // @DisplayName: GPS 1 Heading
+    // @Description: Enable GPS1 output of NMEA heading HDT sentence or UBLOX_RELPOSNED
+    // @Values: 0:Disabled, 1:Enabled
+    // @User: Advanced
     AP_GROUPINFO("GPS_HDG",       13, SIM,  gps_hdg_enabled[0], SIM::GPS_HEADING_NONE),
     AP_GROUPINFO("GPS_ACC",       14, SIM,  gps_accuracy[0], 0.3),
     AP_GROUPINFO("GPS_VERR",      15, SIM,  gps_vel_err[0], 0),
@@ -585,7 +594,16 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Units: s
     // @User: Advanced
     AP_GROUPINFO("GPS2_LCKTIME",  40, SIM,  gps_lock_time[1], 0),
+    // @Param: GPS2_ALT_OFS
+    // @DisplayName: GPS 2 Altitude Offset
+    // @Description: GPS 2 Altitude Error
+    // @Units: m
     AP_GROUPINFO("GPS2_ALT_OFS",  41, SIM,  gps_alt_offset[1], 0),
+    // @Param: GPS2_HDG
+    // @DisplayName: GPS 2 Heading
+    // @Description: Enable GPS2 output of NMEA heading HDT sentence or UBLOX_RELPOSNED
+    // @Values: 0:Disabled, 1:Enabled
+    // @User: Advanced
     AP_GROUPINFO("GPS2_HDG",      42, SIM,  gps_hdg_enabled[1], SIM::GPS_HEADING_NONE),
     AP_GROUPINFO("GPS2_ACC",      43, SIM,  gps_accuracy[1], 0.3),
     AP_GROUPINFO("GPS2_VERR",     44, SIM,  gps_vel_err[1], 0),
