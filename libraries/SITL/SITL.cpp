@@ -530,6 +530,11 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Values: 0:Disabled, 1:Enabled
     // @User: Advanced
     AP_GROUPINFO("GPS_HDG",       13, SIM,  gps_hdg_enabled[0], SIM::GPS_HEADING_NONE),
+    // @Param: GPS_ACC
+    // @DisplayName: GPS 1 Accuracy
+    // @Description: GPS 1 Accuracy
+    // @Vector3Parameter: 1
+    // @User: Advanced
     AP_GROUPINFO("GPS_ACC",       14, SIM,  gps_accuracy[0], 0.3),
     AP_GROUPINFO("GPS_VERR",      15, SIM,  gps_vel_err[0], 0),
     // @Param: GPS2_DISABLE
@@ -605,6 +610,11 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @Values: 0:Disabled, 1:Enabled
     // @User: Advanced
     AP_GROUPINFO("GPS2_HDG",      42, SIM,  gps_hdg_enabled[1], SIM::GPS_HEADING_NONE),
+    // @Param: GPS2_ACC
+    // @DisplayName: GPS 2 Accuracy
+    // @Description: GPS 22 Accuracy
+    // @Vector3Parameter: 1
+    // @User: Advanced
     AP_GROUPINFO("GPS2_ACC",      43, SIM,  gps_accuracy[1], 0.3),
     AP_GROUPINFO("GPS2_VERR",     44, SIM,  gps_vel_err[1], 0),
 
