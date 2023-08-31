@@ -484,8 +484,21 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @DisplayName: GPS 1 Num Satellites
     // @Description: Number of satellites GPS 1 has in view
     AP_GROUPINFO("GPS_NUMSATS",    5, SIM,  gps_numsats[0],   10),
+    // @Param: GPS_GLITCH
+    // @DisplayName: GPS 1 Glitch Offsets
+    // @Description: Lat, Lon, Alt offsets for GPS 1 glitches
+    // @User: Advanced
     AP_GROUPINFO("GPS_GLITCH",     6, SIM,  gps_glitch[0],  0),
+    // @Param: GPS_HZ
+    // @DisplayName: GPS 1 Hz
+    // @Description: GPS 1 Update rate
+    // @Units: Hz
     AP_GROUPINFO("GPS_HZ",         7, SIM,  gps_hertz[0],  5),
+    // @Param: GPS_DRIFTALT
+    // @DisplayName: GPS 1 Altitude Drift
+    // @Description: GPS 1 Drift in Altitude
+    // @Units: m
+    // @User: Advanced
     AP_GROUPINFO("GPS_DRIFTALT",   8, SIM,  gps_drift_alt[0], 0),
     AP_GROUPINFO("GPS_POS",        9, SIM,  gps_pos_offset[0], 0),
     AP_GROUPINFO("GPS_NOISE",     10, SIM,  gps_noise[0], 0),
@@ -521,8 +534,21 @@ const AP_Param::GroupInfo SIM::var_gps[] = {
     // @DisplayName: GPS 2 Num Satellites
     // @Description: Number of satellites GPS 2 has in view
     AP_GROUPINFO("GPS2_NUMSATS",  34, SIM,  gps_numsats[1],   10),
+    // @Param: GPS2_GLITCH
+    // @DisplayName: GPS 2 Glitch Offsets
+    // @Description: Lat, Lon, Alt offsets for GPS 2 glitches
+    // @User: Advanced
     AP_GROUPINFO("GPS2_GLTCH",    35, SIM,  gps_glitch[1],  0),
+    // @Param: GPS2_HZ
+    // @DisplayName: GPS 2 Hz
+    // @Description: GPS 2 Update rate
+    // @Units: Hz
     AP_GROUPINFO("GPS2_HZ",       36, SIM,  gps_hertz[1],  5),
+    // @Param: GPS2_DRIFTALT
+    // @DisplayName: GPS 2 Altitude Drift
+    // @Description: GPS 2 Drift in Altitude
+    // @Units: m
+    // @User: Advanced
     AP_GROUPINFO("GPS2_DRFTALT",  37, SIM,  gps_drift_alt[1], 0),
     AP_GROUPINFO("GPS2_POS",      38, SIM,  gps_pos_offset[1], 0),
     AP_GROUPINFO("GPS2_NOISE",    39, SIM,  gps_noise[1], 0),
