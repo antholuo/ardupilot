@@ -1,0 +1,8 @@
+include ../WARGL431/hwdef.inc 
+
+# ----------------- PWM -------------------------
+PA8 TIM1_CH1 TIM1 PWM(1) GPIO(50)
+PA9 TIM1_CH2 TIM1 PWM(2) GPIO(51)
+PB0 TIM2_CH2N TIM2 PWM(3) GPIO(52)
+
+#define HAL_PERIPH_ENABLE_NOTIFY
